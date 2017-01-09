@@ -1,0 +1,26 @@
+{
+  "name": "portfolio_package",
+  "version": "1.0.0",
+  "description": "resume, CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lauren Etheridge",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csslint": "^1.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "*",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*"
+  }
+}
