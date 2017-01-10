@@ -8,7 +8,7 @@ var turn = 0;
 var icon = 'X';
 var player = 'Player 1';
 
-// Set Background Color
+// Set background color
 $(document).ready(function() {  
 $('body').css('background-color', '#aad4ad');
 });
@@ -18,6 +18,7 @@ $('.piece').click(function(){
   if($(this).html()===""){
     if (turn%2!==0) {
       icon = "O";
+
     } 
 	  else {
       icon = 'X';

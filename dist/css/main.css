@@ -3104,6 +3104,44 @@ html[xmlns] .slides {
 }
 
 
+#gameheading {
+	margin-left: -15px;
+	color: #000 !important;
+}
+
+.piece {
+	font-size: 400%;
+	font-weight: 600;
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	padding-top: 30px;
+	color: #000;
+	border: 5px solid black;
+	border-radius: 5px;
+	background-color: #ec8e8e;
+}
+
+.piece:hover {
+	background-color: cornflowerblue;
+}
+
+.board {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#restart {
+	margin-top: 20px;
+	margin-left: -18px;
+}
+
+.won {
+	background-color: #8f96cc;
+}
+
+
 /* Magnific Popup CSS */
 
 .mfp-bg {

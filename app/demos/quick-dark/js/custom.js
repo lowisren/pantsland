@@ -167,9 +167,9 @@ $(function() {
 								  
 			 
 $(".fullscreen").backstretch([
-   "img/showcase-5.jpg",
-   "img/showcase-2.jpg",
-   "img/showcase-3.jpg"
+   "img/grnburst.jpg",
+   "img/grnbrick.jpg",
+   "img/floralgrn.jpg"
 ], {duration: 5000, fade: 1000});
 
 
