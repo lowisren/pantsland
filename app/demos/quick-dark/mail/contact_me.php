@@ -14,10 +14,10 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'lowisren@gmail.com'; // put your email
+$to = 'lauren@laurenbetheridge.com'; 
 $email_subject = "Contact form submitted by:  $name";
 $email_body = "You have received a new message. \n\n".
-				  " Here are the details:\n \nName: $name \n ".
+				  "Here are the details:\n \nName: $name \n ".
 				  "Email: $email_address\n Message \n $message";
 $headers = "From: contacts@myprogrammingblog.com\n";
 $headers .= "Reply-To: $email_address";	
