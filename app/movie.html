@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PANTSLAND|Tic Tac Toe</title>
+        <title>PANTSLAND|Movie Tickets</title>
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,26 +41,38 @@
                 width: 100%;
                 text-align: center;
             }
-            p {
+            h5 {
                 color: aliceblue;
+            }
+
+            #movielist {
+                background: #333;
+                padding: 20px;
             }
             
-            li {
+            #ticketcost {
                 color: aliceblue;
+                background: #000;
                 font-weight: 600;
                 list-style: none;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+
+
             }
-            h1 {
-                color: goldenrod;
-                font-size: 40px;
-                font-family: Arial;
+            h3 {
+                color: #3CB371;
+                font-size: 35px;
+                font-family: Raleway;
+                font-variant: small-caps;
             }
         
         </style>
 
     </head>
     <body data-spy="scroll" data-offset="80">
-
+    
         <section id="navigation">
             <div class="navbar navbar-inverse navbar-static-top" role="navigation">
                 <div class="container">
@@ -78,97 +90,47 @@
                         <ul class="nav navbar-nav navbar-right scrollto">
                             <li><a href="index.html#home">Home</a></li>
                             <li><a href="index.html#about">About</a></li>
-                            <li><a href="index.html#team">Team</a></li>
-                            <li><a href="index.html#services">Services</a></li>
-                            <li><a href="index.html#work">Work</a></li>
-                            <li><a href="index.html#pricing">Pricing</a></li>
-                            <li class="active"><a href="index.html#blog">Blog</a></li>
-                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html#team">Personal Interests</a></li>
+                            <li><a href="index.html#services">Wheelhouse</a></li>
+                            <li><a href="index.html#work">Portfolio</a></li>
+                            <li class="active"><a href="game.html">Game</a></li>
+                            <li><a href="index.html#contact">Contact Me</a></li>
                         </ul>
-
+                        
                     </div><!--/.nav-collapse -->
                 </div><!--/.container -->
             </div><!--navbar-default-->
         </section><!--navigation section end here-->
-
+ <!--back to top end-->
+        <div class="back-wrap">
+            <a href="index.html#work" class="back-link"><i class="fa fa-long-arrow-left"></i> back to Portfolio</a>
+        </div>
         <section id="blog-wrapper" class="section-padding">
             <div class="container center-heading text-center">
+
+             <h1 class="text-center">HTML5 Canvas Text | Movie Ticket Cost Selection</h1>
             
              <div style="width: 80%; margin: auto; margin-top: 100px; border: 1px solid black; padding: 5px; background-color: #333;">
-            <p>This page will decide the cost of a movie ticket based on age.
-            <br /><br />
-            The following list shows associated ticket cost based on the age of the customer:
-            </p>            
-            <ul>
-                <li>Under age 5 (age < 5) cost is $0.00</li>
-                <li>Between ages 5 and 12 (5 >= age <= 12) cost is $5.00</li>
-                <li>Older than 12 (age > 12) cost is $9.00</li>
-            </ul>
-            <canvas id="pane" width="700" height="300" style="border:1px solid #000000; background-color: black"></canvas>          
-            <br />
-            <input type="button" value="Enter Customer's Age (if statement)" onclick="getTickCostIf()" /><br />
-            <input type="button" value="Enter Customer's Age (switch statement)" onclick="getTickCostSwitch()" />
-            <br /><br />
-      <h1 id="p1">Hi there! This text will change based on your selection!</h1>
-      </div>
+                <h5>This page will decide the cost of a movie ticket based on age.
+                <br /><br />
+                The following list shows associated ticket cost based on the age of the customer:
+                </h5>            
+                <ul id="movielist">
+                    <li id="ticketcost">Under age 5 (age < 5) cost is $0.00</li>
+                    <li id="ticketcost">Between ages 5 and 12 (5 >= age <= 12) cost is $5.00</li>
+                    <li id="ticketcost">Older than 12 (age > 12) cost is $9.00</li>
+                </ul>
+                <canvas id="pane" width="700" height="300" style="border:1px solid #000000; background-color: black"></canvas>          
+                <br />
+                <br />
+                <br />
+                <div class="col-sm-6 margin-btm-30 technologies">
+                    <input class="btn btn-border-white btn-lg" type="button" value="Enter Age (if statement)" onclick="getTickCostIf()" />
+                </div>
+                <h3 class="text-center project-link" id="p1">Hi! This text will change based on your selection!</h3>
+            </div>
             </div><!--end center text/game container-->             
         </section><!--blog wrapper-->
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 margin-btm-30">
-                        <div class="footer-col">
-                            <h3 class="widget-title">
-                                About Quick Theme
-                            </h3>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
-                            </p>
-                        </div><!--footer-col-->
-
-                        <div class="footer-col">
-                            <ul class="list-inline social-1">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div><!--footer-col-->
-                    </div>
-
-                    <div class="col-sm-4 margin-btm-30">
-                        <div class="footer-col">
-                            <h3 class="widget-title">
-                                Latest Tweets
-                            </h3>
-                        </div>
-                        <div class="tweet"></div>
-
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="footer-col">
-                            <h3 class="widget-title">
-                                Subscribe to Newsletter
-                            </h3>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                            </p>
-                            <form role="form" class="subscribe-form">
-                                <div class="input-group">
-                                    <input type="email" class="form-control" placeholder="Enter email to subscribe">
-                                    <span class="input-group-btn">
-                                        <a class="btn  btn-theme btn-lg" href="#">Ok</a>
-                                        <!--<button class="btn  btn-theme btn-lg">Ok</button>-->
-                                    </span>
-                                </div>
-                            </form>
-                        </div><!--footer-col-->
-                    </div>
-                </div>
-            </div>
-        </footer><!--footer-->
         <div class="footer-btm">
             <ul class="footer-nav list-inline text-center">
                 <li><a href="index.html">Home</a></li>
@@ -176,9 +138,11 @@
                 <li><a href="index.html#work">Portfolio</a></li>
                 <li><a href="index.html#contact">Contact Me</a></li>
             </ul>
-            <div class="copyright text-center">
-                Copyright &copy; 2014. Quick Theme. Modified by <a href="index.html">Lauren Etheridge</a>
+            <div class="footer-project-single">
+            <div class="container text-center">
+                <p>PANTSLAND | <strong>Lauren Etheridge</strong> </p>
             </div>
+        </div>
         </div><!--footer-btm-->
         <!--back to top-->
         <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>

@@ -6,8 +6,8 @@
 var c = document.getElementById('pane').getContext('2d'); 
 
 var grd=c.createLinearGradient(160, 150, 400, 200);
-		grd.addColorStop(0,"#DAA520");
-		grd.addColorStop(1,"#CFB53B");
+		grd.addColorStop(0,"#3CB371");
+		grd.addColorStop(1,"#8FBC8F");
 
 		c.fillStyle=grd;
 		c.lineWidth=5;
@@ -38,52 +38,3 @@ if (age < 5) {
 	document.getElementById("p1").innerHTML = "Ticket Cost: $9.00";
   }
 }
-
-
-// Switch Statement
-
-function getTickCostSwitch() {
-	var age = prompt("Please choose your age, 1 , 5, 12, 15, 35");
-
-		switch (age) {
- 
-		case "1":
-		 
-			document.getElementById("p1").innerHTML = "FREE ADMISSION!";
-		 
-		break;
-		  
-		case "5":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $5.00";
-		 
-		break; 
-		 
-		case "12":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $5.00";
-		 
-		break;
-		  
-		case "15":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $9.00";
-		 
-		break;
-		  
-		case "35":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $9.00";
-		 
-		 
-		break;
-		  
-		default:
-		 
-			document.getElementById("p1").innerHTML = "FREE ADMISSION!";
-		 
-		break;
- 
-	}
-}
-

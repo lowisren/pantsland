@@ -1126,11 +1126,11 @@ h3.heading-progress {
 .back-link{
 
     display: inline-block;
-    color:#fff;
+    color:#000;
 }
 .back-wrap{
     padding: 14px 28px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
 .back-link i{
     margin-right: 6px;

@@ -11381,8 +11381,8 @@ b){if(b)return b.replace(c,"")})})})}})(jQuery);
 var c = document.getElementById('pane').getContext('2d'); 
 
 var grd=c.createLinearGradient(160, 150, 400, 200);
-		grd.addColorStop(0,"#DAA520");
-		grd.addColorStop(1,"#CFB53B");
+		grd.addColorStop(0,"#3CB371");
+		grd.addColorStop(1,"#8FBC8F");
 
 		c.fillStyle=grd;
 		c.lineWidth=5;
@@ -11414,55 +11414,6 @@ if (age < 5) {
   }
 }
 
-
-// Switch Statement
-
-function getTickCostSwitch() {
-	var age = prompt("Please choose your age, 1 , 5, 12, 15, 35");
-
-		switch (age) {
- 
-		case "1":
-		 
-			document.getElementById("p1").innerHTML = "FREE ADMISSION!";
-		 
-		break;
-		  
-		case "5":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $5.00";
-		 
-		break; 
-		 
-		case "12":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $5.00";
-		 
-		break;
-		  
-		case "15":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $9.00";
-		 
-		break;
-		  
-		case "35":
-		 
-			document.getElementById("p1").innerHTML = "Ticket Cost: $9.00";
-		 
-		 
-		break;
-		  
-		default:
-		 
-			document.getElementById("p1").innerHTML = "FREE ADMISSION!";
-		 
-		break;
- 
-	}
-}
-
-
 /* Program:  mylab8chall.js --> JavaScript file to Lab8_Challenge.html
    Programmer:  Lauren Etheridge
    Date:  8 November 2016
@@ -11472,6 +11423,7 @@ function getTickCostSwitch() {
 var turn = 0;
 var icon = 'X';
 var player = 'Player 1';
+
 
 // Set background color
 $(document).ready(function() {  
@@ -11506,28 +11458,28 @@ $('#restart').click(function(){
 function checkWin(){
   if ($('#p1').html()===icon && $('#p2').html()===icon && $('#p3').html()===icon ) {
     $('#p1, #p2, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p4').html()===icon && $('#p5').html()===icon && $('#p6').html()===icon ) {
     $('#p4, #p5, #p6').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p8').html()===icon && $('#p9').html()===icon ) {
     $('#p7, #p8, #p9').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p4').html()===icon && $('#p1').html()===icon ) {
     $('#p7, #p4, #p1').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p8').html()===icon && $('#p5').html()===icon && $('#p2').html()===icon ) {
     $('#p8, #p5, #p2').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p9').html()===icon && $('#p6').html()===icon && $('#p3').html()===icon ) {
     $('#p9, #p6, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p5').html()===icon && $('#p3').html()===icon ) {
     $('#p7, #p5, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p9').html()===icon && $('#p5').html()===icon && $('#p1').html()===icon ) {
     $('#p9, #p5, #p1').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   }
   
 //Draw Alert

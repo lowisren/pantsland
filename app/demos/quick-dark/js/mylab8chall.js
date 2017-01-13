@@ -8,6 +8,7 @@ var turn = 0;
 var icon = 'X';
 var player = 'Player 1';
 
+
 // Set background color
 $(document).ready(function() {  
 $('body').css('background-color', '#aad4ad');
@@ -41,28 +42,28 @@ $('#restart').click(function(){
 function checkWin(){
   if ($('#p1').html()===icon && $('#p2').html()===icon && $('#p3').html()===icon ) {
     $('#p1, #p2, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p4').html()===icon && $('#p5').html()===icon && $('#p6').html()===icon ) {
     $('#p4, #p5, #p6').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p8').html()===icon && $('#p9').html()===icon ) {
     $('#p7, #p8, #p9').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p4').html()===icon && $('#p1').html()===icon ) {
     $('#p7, #p4, #p1').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p8').html()===icon && $('#p5').html()===icon && $('#p2').html()===icon ) {
     $('#p8, #p5, #p2').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p9').html()===icon && $('#p6').html()===icon && $('#p3').html()===icon ) {
     $('#p9, #p6, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p7').html()===icon && $('#p5').html()===icon && $('#p3').html()===icon ) {
     $('#p7, #p5, #p3').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   } else if ($('#p9').html()===icon && $('#p5').html()===icon && $('#p1').html()===icon ) {
     $('#p9, #p5, #p1').addClass('won');
-    alert(player + ' won!');
+    alert(icon + ' won!');
   }
   
 //Draw Alert
