@@ -13,7 +13,7 @@ var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 
 gulp.task('css',function(){
-    gulp.src(['app/demos/quick-dark/css/**/*.css'])
+    gulp.src(['app/css/*.css'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -34,7 +34,7 @@ gulp.task('css',function(){
         .pipe(gulp.dest('dist/css'))
 });
 gulp.task('js',function(){
-    gulp.src(['app/demos/quick-dark/js/**/*.js'])
+    gulp.src(['app/js/*.js'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -52,7 +52,7 @@ gulp.task('js',function(){
         .pipe(gulp.dest('dist/js'))
 });
 gulp.task('html',function(){
-    gulp.src(['app/demos/quick-dark//**/*.html'])
+    gulp.src(['app/*.html'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -62,7 +62,7 @@ gulp.task('html',function(){
         .pipe(gulp.dest('app/'))
 });
 gulp.task('image',function(){
-    gulp.src(['app/demos/quick-dark/img//**/*'])
+    gulp.src(['app/img/*'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -73,9 +73,9 @@ gulp.task('image',function(){
         .pipe(gulp.dest('dist/img'))
 });
 gulp.task('default',function(){
-    gulp.watch('app/demos/quick-dark/js/**/*.js',['js']);
-    gulp.watch('app/demos/quick-dark/css/**/*.css',['css']);
-    gulp.watch('app/demos/quick-dark//**/*.html',['html']);
-    gulp.watch('app/demos/quick-dark/img//**/*',['image']);
+    gulp.watch('app/*.js',['js']);
+    gulp.watch('app/*.css',['css']);
+    gulp.watch('app/*.html',['html']);
+    gulp.watch('app/img/*',['image']);
 });
 
